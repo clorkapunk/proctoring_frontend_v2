@@ -1,0 +1,34 @@
+
+
+$spacer: 1rem;
+
+
+
+@use "bootstrap/scss/bootstrap" with (
+     // color
+     $primary: #662eff,
+     $blue: #0d6efd,
+
+     // spacers
+     $spacer: $spacer,
+     $spacers: (
+          0: 0,
+          1: $spacer * .25,
+          2: $spacer * .5,
+          3: $spacer,
+          4: $spacer * 1.5,
+          5: $spacer * 3,
+    ),
+
+    // max-widths
+    $container-max-widths: (
+        sm: 560px,
+        md: 820px,
+        lg: 1090px,
+        xl: 1200px,
+        xxl: 1380px
+    ),
+
+    //
+    $headings-margin-bottom: 0px
+);
